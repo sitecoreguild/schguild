@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <Version>0.0.1.3</Version>
+    <Authors>Chris Williams, Brent Pinkstaff, Jose Dominguez</Authors>
+    <Company>Sitecore Content Hub Mentoring Guild</Company>
+    <Product>Sitecore Content Hub API Demos</Product>
+    <Description>This application provides samples on how to call various REST APIs related to Sitecore Content Hub. Although we have included this sample on how you could use REST API, we highly recommend you use Web Client SDK if possible as it wraps a lot of the complexities for you and does not rely on a non-expiring token.</Description>
+    <Copyright>(c) 2019 Sitecore Content Hub Mentoring Guild</Copyright>
+    <PackageReleaseNotes>v0.0.1.3 - This version contains Status API, some Option List API, and Querying API calls.</PackageReleaseNotes>
+    <PackageLicenseUrl>https://github.com/sitecoreguild/schguild/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <RepositoryUrl>https://github.com/sitecoreguild/schguild</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+</Project>
