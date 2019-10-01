@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Stylelabs.M.Base.Querying" Version="3.2.2" />
+    <PackageReference Include="Stylelabs.M.Base.Web.Api.Models" Version="3.2.2" />
+    <PackageReference Include="Stylelabs.M.Content.Web.Api.Models" Version="3.2.2" />
+    <PackageReference Include="Stylelabs.M.Dam.Web.Api.Models" Version="3.2.2" />
+    <PackageReference Include="Stylelabs.M.Framework.Essentials" Version="3.2.2" />
+    <PackageReference Include="Stylelabs.M.Portal.Web.Api.Models" Version="3.2.2" />
+    <PackageReference Include="Stylelabs.M.Scripting.Types" Version="3.2.2" />
+    <PackageReference Include="Stylelabs.M.Sdk" Version="3.2.2" />
+    <PackageReference Include="Stylelabs.M.Sdk.WebApiClient" Version="3.1.200" />
+    <PackageReference Include="Stylelabs.M.Sdk.WebClient" Version="3.2.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+  </ItemGroup>
+</Project>
