@@ -40,3 +40,10 @@
 // - Uncomment the ones you want to try.
 // - Some modules do not have API samples but discuss what these items are and 
 //   direct you to documentation on how they work.
+
+// ActionTypes: Sample for getting all the action types.
+// #load "ActionTypes.csx" 
+
+// DataSources / OptionLists: Sample for creating and getting Options Lists.
+//#load "DataSource_or_OptionList.csx"    // TO DO: Create needs to be coded
+
