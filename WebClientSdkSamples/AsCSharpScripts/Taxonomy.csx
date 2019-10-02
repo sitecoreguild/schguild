@@ -72,6 +72,7 @@ public void CreateSampleTaxonomy()
                         : " failed to create taxonomy item with error: " + result.Content.ReadAsStringAsync().Result);
 }
 
+// Get a sample taxonomy item
 public void GetSampleTaxonomyItem()
 {
     // TO DO: Need to create a sample

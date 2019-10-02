@@ -48,10 +48,10 @@ using Stylelabs.M.Sdk.WebClient;
 // CreateSampleHierarchialDataSource();
 
 // Sample Description: Gets all the data sources from Content Hub and displays the name to console.
-GetAllDataSources();
+// GetAllDataSources();
 
 // Sample Description: Gets a sample data source / option list from Content Hub and displays it in the console.
-GetSampleDataSource();
+// GetSampleDataSource();
 
 // ----------------------------------------------------------------------------------
 
