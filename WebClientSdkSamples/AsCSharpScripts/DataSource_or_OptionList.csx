@@ -1,5 +1,5 @@
 /********************************************************************************
- * Sitecore Content Hub - DataSource / OptionList
+ * Sitecore Content Hub C# Script Samples
  * 
  * This script contains functions that call MClient to access and manipulate DataSources 
  * also known as OptionList.

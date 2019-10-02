@@ -45,5 +45,7 @@
 // #load "ActionTypes.csx" 
 
 // DataSources / OptionLists: Sample for creating and getting Options Lists.
-//#load "DataSource_or_OptionList.csx"    // TO DO: Create needs to be coded
+// #load "DataSource_or_OptionList.csx"    // TO DO: Create needs to be coded
 
+// Taxonomy: Sample for creating and getting sample taxonomy items
+// #load "Taxonomy.csx"

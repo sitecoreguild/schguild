@@ -1,5 +1,5 @@
 /********************************************************************************
- * Sitecore Content Hub - Action Types
+ * Sitecore Content Hub C# Script Samples
  * 
  * This script contains functions that call MClient to access and manipulate Action Types.
  * 
