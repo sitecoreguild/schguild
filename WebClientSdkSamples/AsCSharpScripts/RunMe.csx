@@ -47,5 +47,14 @@
 // DataSources / OptionLists: Sample for creating and getting Options Lists.
 // #load "DataSource_or_OptionList.csx"    // TO DO: Create needs to be coded
 
+// Querying: Samples of doing searches for entities in the system.
+// #load "Querying.csx"
+
+// (MRM) Projects: Sample for getting projects
+// #load "Projects.csx"
+
+// Schema: Gets schemas based on ids or names
+// #load "Schema.csx"
+
 // Taxonomy: Sample for creating and getting sample taxonomy items
 // #load "Taxonomy.csx"
