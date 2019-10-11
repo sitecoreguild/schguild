@@ -16,9 +16,7 @@
  * - Before using ensure you edit the Settings.csx to match your instance of Sitecore Content Hub
  *  
  ********************************************************************************/
-
-#r "nuget:Stylelabs.M.Sdk.WebClient"
-
+#load "References.csx"          // Library References
 #load "Settings.csx"            // Contains the instance specific settings for your environment
 
 using System;
