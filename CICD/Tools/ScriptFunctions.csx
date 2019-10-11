@@ -27,6 +27,7 @@ using Stylelabs.M.Base.Querying;
 using Stylelabs.M.Framework.Essentials.LoadConfigurations;
 using Stylelabs.M.Sdk.Contracts.Base;
 using Stylelabs.M.Sdk.WebClient;
+using Stylelabs.M.Framework.Essentials.LoadOptions;
 
 /// <summary>
 /// Gets the specific script with the default culture and all the properties and relations.
@@ -92,4 +93,31 @@ public string GetScriptAsJson(string baseUrl, long id, string culture)
     headers.Add("minimalSchema", "true");
 
     return MClient.Raw.GetAsync(absouluteUrl, headers).Result.Content.ReadAsStringAsync().Result;
+}
+
+public async Task<IList<IEntity>> GetAllScripts()
+{
+    //  This is the API to get all scripts /api/entities/query?query=Definition.Name=='M.Script'
+    var filter = new DefinitionQueryFilter();
+    filter.Names = new List<string> { "M.Script" };
+
+    var query = new Query
+    {
+        Filter = filter  
+    };
+
+    var relationLoadOption = new RelationLoadOption(new string[] { "ScriptToActiveScriptContent" });
+    var loadConfig = new EntityLoadConfiguration(CultureLoadOption.Default, PropertyLoadOption.All, relationLoadOption);
+    var result = await MClient.Querying.QueryAsync(query, loadConfig).ConfigureAwait(false);
+    return result.Items.Where(x => !x.IsSystemOwned && (x.CreatedBy != 6 && x.ModifiedBy != 6)).ToList(); //filter unchanged system owned scripts
+}
+
+public string GetScriptFriendlyName(IEntity script)
+{
+    if(script == null || script.Id == null)
+    {
+        return null;
+    }
+
+    return script.Id + "_" + script.Identifier.Replace("-", "_");
 }
